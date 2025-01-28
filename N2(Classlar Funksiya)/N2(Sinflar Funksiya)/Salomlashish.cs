@@ -1,10 +1,10 @@
 ﻿namespace N2_Sinflar_Funksiya_
 {
-    public class Salomlashish
+    public  class Salomlashish
     {
-        public void SayHallo()
+        public  void Ism(string ism)
         {
-            Console.WriteLine("Nima gap bratishka");
+            Console.WriteLine(ism);
         }
     }
 }
