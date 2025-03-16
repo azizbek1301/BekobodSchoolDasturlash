@@ -2,16 +2,24 @@
 {
     public static class Matematika
     {
-        public static void Modul(double son)
+        public static int Summa(params int[] sonlar)
         {
-            if (son>0)
+            int summ = 0;
+            for (int i = 0; i < sonlar.Length; i++)
             {
-                Console.WriteLine(son);
+                summ += sonlar[i];
             }
-            else
+            return summ;
+        }
+
+        public static void EkrangaChiqar(params object[] malumotlar)
+        {
+            foreach (var soz in malumotlar)
             {
-                Console.WriteLine(-1 * son);
+                Console.WriteLine(soz);
             }
         }
+
+       
     }
 }

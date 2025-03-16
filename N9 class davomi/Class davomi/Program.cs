@@ -1,5 +1,6 @@
 ﻿
 
+
 #region static metod
 
 
@@ -56,8 +57,50 @@ class Matematik
 
 #region  params
 
+/*
+using Class_davomi;
+
+int[] sonlar = { 2, 3, 5, 4, 1, 2, 5, 6 };
+
+int summ = 0;
+for(int i = 0; i < sonlar.Length; i++)
+{
+    summ+= sonlar[i];
+}
+Console.WriteLine(summ);
 
 
+int[] sonlar1 = { 2,5,8,9,6,3,5,2, 3, 5, 4, 1, 2, 5, 6 };
+
+int summ1 = 0;
+for (int i = 0; i < sonlar1.Length; i++)
+{
+    summ1 += sonlar1[i];
+}
+Console.WriteLine(summ1);
+
+Console.WriteLine("---------------------------------------");
+
+Console.WriteLine(Matematika.Summa(sonlar));
+Console.WriteLine(Matematika.Summa(sonlar1));
+
+
+int[] son3 = { 1, 2, 3, 4, 5 };
+
+
+
+Console.WriteLine("-----------------------");
+
+
+string[] hayvonlar = { "ot", "quyon", "baliq", "mushuk" ,"begemot"};
+
+Matematika.EkrangaChiqar(hayvonlar);
+
+
+object[] aralash = { 4, 5, 6, "Quyon", "BMW", "Matiz", 3.2 ,false};
+Matematika.EkrangaChiqar(aralash);
+
+*/
 #endregion
 
 
@@ -70,6 +113,8 @@ class Matematik
 C# da ref va out Kalit So‘zlari
 C# dasturlash tilida ref va out kalit so‘zlari metodlarga parametrlarni manzili bo‘yicha (reference) uzatish uchun ishlatiladi.
 Ikkalasi ham metod ichida parametr qiymatini o‘zgartirish imkonini beradi, lekin ularning farqlari bor.
+
+
 */
 
 
@@ -85,17 +130,19 @@ Muhim xususiyatlari:
 
 */
 /*
-    int number = 10;
+int number = 10;
 Console.WriteLine(number);
+
+
 ChangeValue(ref number);
-    Console.WriteLine(number); // Natija: 20
+Console.WriteLine(number); // Natija: 20
 
- void ChangeValue(ref int x)
+void ChangeValue(ref int number)
 {
-    x = 20; // Tashqaridagi "number" ham o'zgaradi
+    number = 20; // Tashqaridagi "number" ham o'zgaradi
 }
-*/
 
+*/
 
 // out
 /*
@@ -114,8 +161,8 @@ Console.WriteLine(result); // Natija: 25
 {
     kvadrat = num * num; // out parametri albatta qiymat olishi kerak
 }
-*/
 
+*/
 
 /*
 ref va out O‘rtasidagi Asosiy Farqlar
@@ -154,6 +201,10 @@ void ModifyOut(out int y)
 */
 
 
+
+
+
+
 // out ishlatilishi  hayotiy misol bilan 
 /*
 string input = "123";
@@ -175,6 +226,8 @@ else
 #region TryParse va Parse
 
 
+
+
 //  Parse
 
 /*
@@ -182,16 +235,17 @@ string son= "123";
 int son2;
 son2=int.Parse(son);
 
+Console.WriteLine(son);
 Console.WriteLine(son2);
 */
 
-/*
 
+/*
 int son;
 son=int.Parse(Console.ReadLine());
 Console.WriteLine(son);
-
 */
+
 
 /*
 
@@ -213,10 +267,10 @@ if (tekshir)
 }
 else
 {
-    Console.WriteLine("xato");
+    Console.WriteLine("xato! intga o'gira olmadim");
 }
-
 */
+
 
 
 
@@ -248,10 +302,10 @@ else
 {
     Console.WriteLine("Xato: Son emas!");
 }
+
 */
 
 /*
-
 string input = "3.14";
 if (double.TryParse(input, out double result))
 {
@@ -271,8 +325,8 @@ if (decimal.TryParse(input, out decimal result))
 }
 */
 
-
 /*
+
 string input = "true";
 if (bool.TryParse(input, out bool result))
 {
@@ -286,20 +340,19 @@ if (bool.TryParse(input, out bool result))
 Console.Write("Yoshingizni kiriting: ");
 string input = Console.ReadLine();
 
-if (int.TryParse(input, out int age))
+if (uint.TryParse(input, out uint age)  )
 {
     Console.WriteLine($"Siz {age} yoshdasiz.");
 }
 else
 {
-    Console.WriteLine("Xato: Iltimos, butun son kiriting.");
+    Console.WriteLine("Xato: Iltimos, yoshni to'g'ri kiriting kiriting.");
 }
+
 */
 
 
-
 #endregion
-
 
 
 
