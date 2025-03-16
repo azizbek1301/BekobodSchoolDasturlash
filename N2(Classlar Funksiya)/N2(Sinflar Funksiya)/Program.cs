@@ -5,24 +5,25 @@
 //  2. Qiymat qaytaradigan funksiya
 
 
-// qiymat qaytarmaydiggan funksiya
+// qiymat qaytarmaydigan funksiya
+
+
 /*
 Salomlash();
 
 
 void Salomlash()
 {
-    Console.WriteLine("Hello");
-    Console.WriteLine("Dunyo");
+    Console.WriteLine("Hello Dunyo");
+    
 }
 */
 
 
 
 
-
-
 /*
+
 
 void SayHelloUz()
 {
@@ -34,7 +35,7 @@ void SayHelloEn()
 }
 void SayHelloFr()
 {
-    Console.WriteLine("Salut");
+    Console.WriteLine("Sava");
 }
 
 string til ;
@@ -56,10 +57,9 @@ switch (til)
         break;
 }
 
+
+
 */
-
-
-
 
 
 
@@ -79,11 +79,14 @@ switch (til)
 
 void SayHello() => Console.WriteLine("Hello");
 
-void SayHello1()=>   Console.WriteLine("Hello1");
+
+
+void Sayhello()=>   Console.WriteLine("Hello1");
 
 
 SayHello();
-SayHello1();
+Sayhello();
+
 */
 
 
@@ -103,20 +106,17 @@ SayHello1();
 
 
 
-
-
 /*
-void PrintMessage(string xabar)
+void PrintMessage(string ism)
 {
-    Console.WriteLine(xabar);
+    Console.WriteLine(ism);
 }
 
-PrintMessage("salom"); 
-
-PrintMessage("Hello Bekobod");   
-PrintMessage("Hello C#");
+PrintMessage("Muhammadamin");
 */
+
 /*
+
 void Yugur(string xabar)
 {
     Console.WriteLine(xabar);
@@ -146,23 +146,23 @@ void Sum(int x, int y)
 {
     int result = x + y;
     Console.WriteLine($"{x} + {y} = {result}");
-    Console.WriteLine(x+" + "+y+" = "+result);
+
+    
 }
 
-Sum(12, 14);
+Sum(14, 25);
 */
 /*
 void Sum(int x, int y)
 {
    
-    Console.WriteLine($"= {x+y}");
+    Console.WriteLine($"{x} + {y}= {x+y}");
    
 }
 
 Sum(12, 14);
+
 */
-
-
 
 
 
@@ -210,43 +210,17 @@ void kopaytir(int x, int y,int c)
     Console.WriteLine(x*y*c);
 }
 
-int a=5;
-int b = 15;
+//int a=5;
+//int b = 15;
 
 
 int a, b;
-a=int.Parse(Console.ReadLine());
-b=int.Parse(Console.ReadLine());
+Console.WriteLine("A ni kiriting");
+a =int.Parse(Console.ReadLine());
+Console.WriteLine("B ni kiriting");
+b =int.Parse(Console.ReadLine());
 Sum(a, b);
-Sum(25, 14);
-kopaytir(a, b, 0);
 
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-void PrintPerson(string name, int age)
-{
-    Console.WriteLine($"Name: {name}  Age: {age}");
-}
-
-PrintPerson("Ahmed", 18);
 */
 
 
@@ -273,8 +247,8 @@ void PrintPerson(string name, int age)
     Console.WriteLine($"Name: {name}  Age: {age}");
 }
 
-byte b = 37;
-PrintPerson("Messi", b);
+
+PrintPerson("Avzalbek", 15);
 */
 
 
@@ -294,15 +268,16 @@ PrintPerson("Messi", b);
 
 
 
+
+
 /*
-void PrintPerson(string name, string company = "Toza havoga direktor", int age = 25 )
+void PrintPerson(string name, byte age)
 {
-    Console.WriteLine($"Name: {name}  Age: {age}  Company: {company}");
+    Console.WriteLine($"Name: {name}  Age: {age}");
 }
 
-
-PrintPerson(  "microsoft","Mansur",17);
-
+byte b = 15;
+PrintPerson("Muhammadamin", b);
 */
 
 
@@ -320,8 +295,36 @@ PrintPerson(  "microsoft","Mansur",17);
 
 
 
-/*
 
+
+/*
+void Xabar(string ism, string kompaniya = "Toza havoga direktor", int yosh = 25 )
+{
+    Console.WriteLine($"Ism: {ism}  Yosh: {yosh}  kompaniya: {kompaniya}");
+}
+
+//Xabar("Avzalbek", "Microsoft", 15);
+//Xabar("Hasan", "Apple");
+Xabar("Azizbek");
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 void PrintPerson(string name, int age = 1, string company = "Undefined")
 {
     Console.WriteLine($"Name: {name}  Age: {age}  Company: {company}");
@@ -330,8 +333,8 @@ void PrintPerson(string name, int age = 1, string company = "Undefined")
 PrintPerson("Jumavoy", company: "Microsoft", age: 37);
 
 PrintPerson( "Matqobul", age: 66, "Pensioner");
-
 */
+
 
 
 
@@ -349,17 +352,13 @@ PrintPerson( "Matqobul", age: 66, "Pensioner");
 
 
 // Qiymat Qaytaruvchi funksiya
-/*
 
-string GetMessage()
+/*
+string XabarBer()
 {
     return "Hello";
 }
-
-
-
-string Kelganxabar=GetMessage();
-Console.WriteLine(Kelganxabar);
+Console.WriteLine(XabarBer());
 */
 
 
@@ -375,15 +374,17 @@ Console.WriteLine(Kelganxabar);
 
 
 
-/*
 
+
+
+
+/*
 string GetMessage()
 {
     return "3";   
 }
 
 Console.WriteLine(GetMessage());
-
 */
 
 
@@ -399,8 +400,9 @@ Console.WriteLine(GetMessage());
 
 
 
-/*
 
+
+/*
 string GetMessage()
 {
     return "Hello";
@@ -429,7 +431,7 @@ Console.WriteLine(message);
 
 
 /*
-string GetMessage()
+string Salomlash()
 {
     return "Hello";
 }
@@ -438,9 +440,9 @@ void PrintMessage(string message)
     Console.WriteLine(message);
 }
 
-
-PrintMessage(GetMessage());
+PrintMessage(Salomlash());
 */
+
 
 
 
@@ -465,11 +467,8 @@ int Sum(int x, int y)
 {
     return x + y;
 }
+Console.WriteLine(Sum(10, 20));
 
-int result = Sum(10, 15);   
-Console.WriteLine(result);   
-
-Console.WriteLine(Sum(10, 15));
 */
 
 
@@ -488,10 +487,9 @@ Console.WriteLine(Sum(10, 15));
 
 
 /*
-
 void PrintPerson(string name, int age)
 {
-    if (age > 120 || age < 1)
+    if (age > 120 | age < 1)
     {
         Console.WriteLine("Bunday yosh mavjud emas");
         
@@ -503,13 +501,12 @@ void PrintPerson(string name, int age)
     }
 }
 
-PrintPerson("Shoqosim", 37);         
-PrintPerson("Ketmonali", 1234);
+PrintPerson("Azizbek", 12);
 */
 
 
 
-
+/*
 using N2_Sinflar_Funksiya_;
 
 Salomlashish salom=new Salomlashish();
@@ -517,7 +514,7 @@ salom.Ism("Azizbek");
 
 Taqqoslash taqqoslash=new Taqqoslash();
 taqqoslash.Solishtir(32, 45);
-
+*/
 
 
 
